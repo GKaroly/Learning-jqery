@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+//when you click on a p element, something will happen
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+
+    $("h3").click(function(){
+    	$(this).hide();
+    });
+
+    $("h2").click(function(){
+    	alert("I'm an alert! :)");
+    });
+
+    $("#specialP").click(function(){
+    	$("p").hide();
+    })
+
+    $(".button_to_hide_all").click(function(){
+    	$("button").hide();
+    })
+
+    $("button#hide_all_odd").click(function(){
+    	$("tr:odd").hide();
+    });
+
+    $("button#hide_all_even").click(function(){
+    	$("tr:even").hide();
+    });
+
+
+    
+
+
+});
+</script>
+</head>
+<body>
+
+<p>This page is made by learning from here: https://www.w3schools.com/jquery/jquery_intro.asp</p>
+<h3>Click me and I will disappear</h3>
+
+<h2>Click me for alert!</h2>
+
+<!-- P elements for testing -->
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<p id="specialP">Click me to hide all "p" tag </p>
+
+
+<button class="button_to_hide_all">Click me to hide all button</button>
+<button class="button_to_hide_all">Click me to hide all button</button>
+<button class="button_to_hide_all">Click me to hide all button</button>
+
+
+
+<table border="1">
+	<tr>
+		<th>Column1</th>
+		<th>Column2</th>
+		<th>Column3</th>
+	</tr>
+	<tr>
+		<td>A</td>
+		<td>1</td>
+		<td>:)</td>
+	</tr>
+
+	<tr>
+		<td>B</td>
+		<td>2</td>
+		<td>:D</td>
+	</tr>
+
+	<tr>
+		<td>C</td>
+		<td>3</td>
+		<td>XD</td>
+	</tr>
+</table>
+
+<button id="hide_all_odd">Hide all odd</button>
+
+<button id="hide_all_even">Hide all odd</button>
+
+
+<h1>Next to learn: https://www.w3schools.com/jquery/jquery_events.asp</h1>
+
+</body>
+</html>
